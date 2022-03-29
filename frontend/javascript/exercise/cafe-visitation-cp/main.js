@@ -14,15 +14,41 @@
 * - Terdapat variable juice dan latte
 */
 
-
 // PSEUDOCODE :
-// TODO: answer here
+/* IF "nama" = ""
+  DISPLAY "Anda tidak boleh masuk!"
+  ELSE IF "nama" != "" and usia <= 17 and uang < juice
+    DISPLAY "Uang tidak cukup. Anda harus pulang."
+  ELSE IF "nama" != "" and usia >= 17 and uang < latte
+    DISPLAY "Uang tidak cukup. Anda harus pulang."
+  ELSE IF "nama" != "" and usia >= 17 and uang > latte
+    DISPLAY "Anda bisa pesan latte. Sisa uang anda: money - latte"
+  ELSE IF "nama" != "" and usia <= 17 and uang > juice
+    DISPLAY "Anda bisa pesan juice. Sisa uang anda: money - juice" 
+*/
 
 function ruangCafe(name, age, money) {
   const juice = 50000;
   const latte = 300000;
+  let a = '';
 
   // TODO: answer here
+  if (name == ""){
+    let a = "Anda Tidak Boleh Masuk!";
+  }
+  else if(name != "" && age > 17 && money > latte){
+    a = "Anda bisa pesan juice. Sisa uang anda: " + (money - latte);
+  }
+  else if(name != "" && age < 17 && money > juice){
+    a = ("Anda bisa pesan juice. Sisa uang anda: " + (money - juice));
+  }
+  else if(name != "" && age < 17 && money < juice){
+    a = ("Uang tidak cukup. Anda harus pulang.");
+  }
+  else if(name != "" && age > 17 && money < latte){
+    a = ("Uang tidak cukup. Anda harus pulang.");
+  }
+  return a
 }
 
 console.log(ruangCafe('', 21, 2000000))

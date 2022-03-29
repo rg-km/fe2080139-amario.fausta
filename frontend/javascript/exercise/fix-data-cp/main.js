@@ -36,7 +36,34 @@
 */
 
 function fixData(line) {
-  // TODO: answer here
+  let panjang = line.length;
+  let consonan = 0;
+  let vokal = 0;
+
+  for(let i = 0; i < panjang; i ++){
+      if(line[i] == "a" || line[i] == "i" || line[i] == "u" || line[i] == "e" || line[i] == "o" ) {
+         vokal ++
+      }
+      else if (line[i] == "#"){
+         vokal += 0
+      }else{ consonan ++}
+      
+   }
+   line = line.split("")
+   for(let i = 0; i < panjang; i ++){
+      if(consonan > vokal && line[i] == "#"){
+         line[i] = "a"
+      }
+      else if(consonan < vokal && line[i] == "#"){
+         line[i] = "b"
+      }
+      else if(consonan == vokal && line[i] == "#"){
+         line[i] = "c"
+      }
+   }
+   line = line.join("")
+
+   return line
 }
 
 console.log(fixData('aoi#fdg#ue'))

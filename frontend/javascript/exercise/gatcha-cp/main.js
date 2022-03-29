@@ -13,11 +13,32 @@
 // TODO: answer here
 
 function gatcha(button) {
-  // TODO: answer here
+  switch(button) {
+    case 1:
+      button = "coba lagi ya"
+      break;
+    case 2:
+      button = "selamat kamu mendapatkan kupon sebanyak 5"
+      break;
+    case 2:
+      button = "selamat kamu mendapatkan kupon sebanyak 10"
+      break;
+    case 3:
+      button = "selamat kamu mendapatkan kupon sebanyak 15"
+      break;
+    case 4:
+      button = "selamat kamu mendapatkan kupon sebanyak 50"
+      break;
+    case 5:
+      button = "selamat kamu mendapatkan kupon sebanyak 100"
+      break;
+  }
+  return button
 }
 
 // Create variable button here
-// TODO: answer here
+let button = (Math.random()*5) + 1;
+button = (parseInt(button))
 
 console.log(gatcha(button))
 

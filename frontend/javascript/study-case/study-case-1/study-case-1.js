@@ -23,9 +23,17 @@
 
 
 function rotation(matrix) {
-    // TODO: answer here
-};
+    let a = matrix.length;
+    let answer = matrix;
 
-// TODO: answer here
+    for (let i = 0; i < a; i ++){
+        for (let k = a-1; k > -1; k --){
+            answer[i][2-k] = matrix[k][i];
+        }
+    }
+    return answer 
+}
+
+console.log(rotation([[1,2,3],[4,5,6],[7,8,9]]))
 
 module.exports = rotation
