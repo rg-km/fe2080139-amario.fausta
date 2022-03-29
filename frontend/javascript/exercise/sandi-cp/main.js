@@ -20,7 +20,26 @@ Lengkapilah function dengan input kata sandi dan output terjemahannya
 
 
 function terjemahKataSandi(kataSandi) {
-  // TODO: answer here
+  kataSandi = kataSandi.split("")
+  for (let i = 0; i = kataSandi.length; i ++){
+    if(kataSandi[i] == "&" && kataSandi[i] == "%" && kataSandi[i] == "^"){
+      kataSandi[i] = '';
+    }
+    else if (kataSandi[i] == "#"){
+      kataSandi[i] = " "
+    }
+    else if(kataSandi[i] == "]"){
+      kataSandi[i] = ","
+    }
+    else if(kataSandi[i] == "+"){
+      kataSandi[i] = "A"
+    }
+    else if(kataSandi[i] == " "){
+      kataSandi[i] = "E"
+    }
+  }
+  kataSandi = kataSandi.join("")
+  return(kataSandi)
 }
 
 
