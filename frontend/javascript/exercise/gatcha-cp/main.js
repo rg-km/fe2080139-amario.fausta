@@ -39,7 +39,6 @@ function gatcha(button) {
 // Create variable button here
 let button = (Math.random()*5) + 1;
 button = (parseInt(button))
-
 console.log(gatcha(button))
 
 module.exports = gatcha
