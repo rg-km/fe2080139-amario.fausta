@@ -65,7 +65,6 @@ function fixData(line) {
 
    return line
 }
-
 console.log(fixData('aoi#fdg#ue'))
 console.log(fixData('eh#xyz#oi#'))
 console.log(fixData('#eui#bcl##'))
