@@ -21,8 +21,8 @@ Lengkapilah function dengan input kata sandi dan output terjemahannya
 
 function terjemahKataSandi(kataSandi) {
   kataSandi = kataSandi.split("")
-  for (let i = 0; i = kataSandi.length; i ++){
-    if(kataSandi[i] == "&" && kataSandi[i] == "%" && kataSandi[i] == "^"){
+  for (let i = 0; i < kataSandi.length; i ++){
+    if(kataSandi[i] == "&" || kataSandi[i] == "%" || kataSandi[i] == "^"){
       kataSandi[i] = '';
     }
     else if (kataSandi[i] == "#"){
