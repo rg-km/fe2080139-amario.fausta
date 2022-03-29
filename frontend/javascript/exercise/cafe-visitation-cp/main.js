@@ -33,14 +33,14 @@ function ruangCafe(name, age, money) {
   let a = '';
 
   // TODO: answer here
-  if (name == ""){
-    let a = "Anda Tidak Boleh Masuk!";
+  if (name.length == 0){
+    a = 'Anda tidak boleh masuk!';
   }
   else if(name != "" && age > 17 && money > latte){
-    a = "Anda bisa pesan juice. Sisa uang anda: " + (money - latte);
+    a = `Anda bisa pesan latte. Sisa uang anda: ${money - latte}`;
   }
   else if(name != "" && age < 17 && money > juice){
-    a = ("Anda bisa pesan juice. Sisa uang anda: " + (money - juice));
+    a = `Anda bisa pesan juice. Sisa uang anda: ${money - juice}`;
   }
   else if(name != "" && age < 17 && money < juice){
     a = ("Uang tidak cukup. Anda harus pulang.");
