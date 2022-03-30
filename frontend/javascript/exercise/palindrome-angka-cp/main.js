@@ -9,7 +9,7 @@
 function angkaPalindrome(num) {
   let pal = [];
   let ans = 0;
-  for( let i = 11; i < 300; i ++ ){ 
+  for( let i = 11; i < 500; i ++ ){ 
     let b = '';
     b = String(i)
     b = b.split("")
@@ -25,21 +25,16 @@ function angkaPalindrome(num) {
     if(num < 10){
       ans = 11
     } 
-    else if(num > pal[i]){
-      if ((num - pal[i]) < (pal[i+1] - num)){
-        ans = pal[i]
-      }
-      else if ((num - pal[i]) > (pal[i+1] - num)){
-        ans = pal[i+1]
-      }
+    else if(num > pal[i] && num < pal[i+1]){
+      ans = pal[i+1]
     }
   }
 
-  return ans
+  return `${ans}`
 } 
 
-console.log(angkaPalindrome(10)); //11
-console.log(angkaPalindrome(17)); //22
-console.log(angkaPalindrome(175)); //181
+console.log(angkaPalindrome(9)); //11
+console.log(angkaPalindrome(12)); //22
+console.log(angkaPalindrome(347)); //181
 
 module.exports = angkaPalindrome
