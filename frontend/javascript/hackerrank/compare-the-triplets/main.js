@@ -15,8 +15,20 @@
 // Full Problem: https://www.hackerrank.com/challenges/compare-the-triplets/problem
 
 function compareTriplets(a, b) {
-  // Write your code here
-  // TODO: answer here
+  let p1 = 0;
+  let p2 = 0;
+  let ar = [];
+  for (let i = 0; i < a.length; i ++){
+    if(a[i] > b[i]){
+      p1 ++
+    }
+    if(b[i] > a[i]){
+      p2 ++
+    }
+  }
+  ar.push(p1);
+  ar.push(p2);
+  return ar
 }
 function main() {
 
