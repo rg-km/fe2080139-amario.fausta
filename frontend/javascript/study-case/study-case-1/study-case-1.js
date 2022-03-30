@@ -23,15 +23,17 @@
 
 
 function rotation(matrix) {
-    let a = matrix.length;
-    let answer = matrix;
-
-    for (let i = 0; i < a; i ++){
-        for (let k = a-1; k > -1; k --){
-            answer[i][2-k] = matrix[k][i];
-        }
-    }
-    return answer 
+  let a = matrix.length;
+  let answer = [];
+  for (let i = 0; i < a; i ++){
+    answer.push([0,0,0])
+  }
+  for (let i = 0; i < a; i ++){
+      for (let k = a-1; k > -1; k --){
+          answer[i][2-k] = matrix[k][i];
+      }
+  }
+  return answer 
 }
 
 console.log(rotation([[1,2,3],[4,5,6],[7,8,9]]))

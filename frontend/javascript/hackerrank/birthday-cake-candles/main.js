@@ -12,8 +12,22 @@
 // Full Problem: https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
 function birthdayCakeCandles(candles) {
-  // Write your code here
-	// TODO: answer here
+  let b = 0;
+  let jumlah = 0;
+  for (let i = 0; i < candles.length; i ++){
+    if(b > candles[i]){
+      b = b;
+    }
+    else if(b <= candles[i]){
+      b = candles[i]
+    }
+  }
+  for (let i = 0; i < candles.length; i ++){
+    if(candles[i] == b){
+      jumlah ++
+    }
+  }
+  return jumlah
 }
 
 function main() {
