@@ -21,8 +21,8 @@ function angkaPalindrome(num) {
     }
   }
 
-  for( let i = 0; i < pal.length; i ++){
-    if(num < 10){
+  for( let i = 0; i < pal.length; i ++){e
+    if(num < [0]){
       ans = 11
     } 
     else if(num > pal[i] && num < pal[i+1]){
@@ -33,8 +33,8 @@ function angkaPalindrome(num) {
   return `${ans}`
 } 
 
-console.log(angkaPalindrome(9)); //11
-console.log(angkaPalindrome(12)); //22
-console.log(angkaPalindrome(347)); //181
+console.log(angkaPalindrome(10)); //11
+console.log(angkaPalindrome(17)); //22
+console.log(angkaPalindrome(175)); //181
 
 module.exports = angkaPalindrome
