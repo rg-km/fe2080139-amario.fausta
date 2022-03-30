@@ -13,8 +13,25 @@
 // Full Problem: https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 
 function breakingRecords(scores) {
-  // Write your code here
-  // TODO: answer here
+  let a = scores[0];
+  let b = scores[0];
+  let kecil = 0;
+  let besar = 0;
+  let arrrr = [];
+  for(let i = 1; i < scores.length ; i ++){
+    if(a < scores[i]){
+      besar ++
+      a = scores[i]
+      console.log(a)
+    }
+    if( b > scores[i]){
+      kecil ++
+      b = scores[i]
+    }
+  }
+  arrrr.push(besar);
+  arrrr.push(kecil)
+  return arrrr
 }
 
 function main() {
