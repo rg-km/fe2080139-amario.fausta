@@ -12,7 +12,18 @@
 
 
 function konversiMenit(menit) {
-  // TODO: answer here
+  let a = 0;
+  let b = '';
+  let c = parseInt(menit/60);
+  let d = menit - c*60;
+  if(menit <= 59){
+    b = `0:${menit}`
+  }else if(menit > 59 && d < 10){
+    b = `${c}:0${d}`
+  }else if(menit > 59 && d > 10){
+    b = `${c}:${d}`
+  }
+  return b
 }
 
 console.log(konversiMenit(61));
