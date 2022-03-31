@@ -1,4 +1,4 @@
-/**
+/*
  * Carilah angka palindrome yang LEBIH BESAR dan TERDEKAT dari angka-angka dibawah ini
  * 
  * Misal:
@@ -16,13 +16,14 @@ function angkaPalindrome(num) {
     b = b.reverse()
     b = b.join("")
     b = parseInt(b)
+    console.log(b)
     if (i == b){
         pal.push(i);
     }
   }
 
-  for( let i = 0; i < pal.length; i ++){e
-    if(num < [0]){
+  for( let i = 0; i < pal.length; i ++){
+    if(num < pal[0]){
       ans = 11
     } 
     else if(num > pal[i] && num < pal[i+1]){
@@ -30,7 +31,7 @@ function angkaPalindrome(num) {
     }
   }
 
-  return `${ans}`
+  return ans
 } 
 
 console.log(angkaPalindrome(10)); //11
