@@ -12,8 +12,11 @@
 // Full Problem: https://www.hackerrank.com/challenges/a-very-big-sum/problem
 
 function aVeryBigSum(ar) {
-  // Complete this function
-  // TODO: answer here
+  let a = 0;
+  for (let i = 0; i < ar.length; i ++){
+    a += ar[i]
+  }
+  return a
 }
 
 function main() {
