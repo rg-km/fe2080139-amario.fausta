@@ -13,19 +13,18 @@
 
 function gradingStudents(grades) {
   let a = 0;
-  let b = 0;
-  let k = [];
   let ans = [];
-  for (let i = 40; i < 100; i += 5){
-    k.push(i)
-  }
-
-  for(let i = 0; i < grades.length; i ++){
-    for(let j = 0; j < k.length; j ++){
-      if(grades[i] > k[j] && grades[i] < k[j] && grades[i] > 40){
-        ans.push(grades[i])
-      }
+  for( let i = 0 ; i <grades.length; i ++){
+    if(grades[i] < 38){
+      a = grades[i]
     }
+    else if( grades[i] >= 38 && grades[i] % 5 >= 3){
+      a = (parseInt(grades[i]/5) + 1)*5
+    }
+    else if( grades[i] >= 38 && grades[i] % 5 <= 2){
+      a = grades[i]
+    }
+    ans.push(a)
   }
   return ans
 }
