@@ -12,8 +12,22 @@
 // Full Problem: https://www.hackerrank.com/challenges/grading/problem
 
 function gradingStudents(grades) {
-  // Write your code here
-  // TODO: answer here
+  let a = 0;
+  let b = 0;
+  let k = [];
+  let ans = [];
+  for (let i = 40; i < 100; i += 5){
+    k.push(i)
+  }
+
+  for(let i = 0; i < grades.length; i ++){
+    for(let j = 0; j < k.length; j ++){
+      if(grades[i] > k[j] && grades[i] < k[j] && grades[i] > 40){
+        ans.push(grades[i])
+      }
+    }
+  }
+  return ans
 }
 
 function main() {
