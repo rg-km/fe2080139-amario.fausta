@@ -6,8 +6,20 @@
 // - division() membagi nilai yang disimpan.
 
 let calculator = {
-  // Tulis kode di sini
-  // TODO: answer here
+    read: {a: 2,
+       b: 3},
+    sum (){
+        return this.read.a + this.read.b
+    },
+    substract () {
+        return this.read.a - this.read.b
+    },
+    multiply () {
+        return this.read.a * this.read.b
+    },
+    division () {
+        return this.read.a/this.read.b
+    }
 };
   
 calculator.read();
