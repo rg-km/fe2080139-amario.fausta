@@ -48,7 +48,7 @@ function miniMaxSum(arr) {
   jwb.push(a)
   jwb.push(c)
 
-  return [a, c]
+  return `${a} ${c}`
 }
 
 function main() {
