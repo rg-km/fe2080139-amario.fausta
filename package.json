@@ -15,5 +15,8 @@
     "@playwright/test": "^1.20.2",
     "cypress": "^6.9.1",
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
