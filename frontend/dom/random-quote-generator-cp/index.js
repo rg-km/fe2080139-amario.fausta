@@ -172,12 +172,47 @@ var quotes = [
 ];
 
 // TODO: answer here
+let quote = document.getElementById('random-quote');
+let author = document.getElementsByClassName('author');
+let citation = document.getElementsByClassName('citation');
+let year = document.getElementsByClassName("year");
+let button = document.getElementsByClassName("btn btn-generate btn-success");
 
 function getQuote() {
 	// TODO: answer here
+	let satu = parseInt(Math.random()*quotes.length);
+	let dua = quotes[satu].author;
+	let tiga = quotes[satu].author;
+	let empat = quotes[satu].citation;
+	let lima = quotes[satu].year;
+
+	if(empat == 'undefined'){
+		empat = '';
+	}
+	if(lima == "undefined"){
+		lima = '';
+	}
 }
 
 
 function displayQuote() {
 	// TODO: answer here
+	let satu = parseInt(Math.random()*quotes.length);
+	let dua = quotes[satu].quote;
+	let tiga = quotes[satu].author;
+	let empat = quotes[satu].citation;
+	let lima = quotes[satu].year;
+	if(typeof(empat) == 'undefined'){
+		empat = '';
+	}
+	if(typeof(lima) == "undefined"){
+		lima = '';
+	}
+	quote.innerHTML = satu;
+	quote.innerHTML = dua;
+	author[0].innerHTML = tiga;
+	citation[0].innerHTML = empat;
+	year[0].innerHTML = lima;
 }
+
+button[0].addEventListener('click', displayQuote())
