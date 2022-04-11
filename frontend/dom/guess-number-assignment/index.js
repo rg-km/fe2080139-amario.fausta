@@ -12,29 +12,16 @@ Uncomment variable dibawah ini untuk mulai mengerjakan. dilarang mengganti nama 
 
 // TODO: answer here
 let newGameBtn = document.getElementsByClassName("btn btn-warning new-game");
-let randomNumber = document.getElementsByClassName("number");
+let randomNumber = parseInt(Math.floor(Math.random()*8)+1);
 let message = document.getElementsByClassName("message");
 let displayScore = document.getElementsByClassName("score");
-let input = document.getElementsByClassName("input");
-let checkBtn = document.getElementsByClassName("btn btn-primary check");
-let score = document.getElementsByClassName("score");
+let input 
+
 
 
 randomNumber = (Math.floor(Math.random()*10))
 function displayMessage(msg) {
   // TODO: answer here
-  if (input == randomNumber){
-    msg = "benar"
-    message.innerHTML(msg)
-  }
-  else if (input < randomNumber){
-    msg = "kurang besar"
-    message.innerHTML(msg)
-  }
-  else if(input > randomNumber){
-    msg = "kurang kecil"
-    message.innerHTML(msg)
-  }
 }
 
 function resetGame() {

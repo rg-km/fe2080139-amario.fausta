@@ -40,10 +40,10 @@ function stop() {
 
 function reset() {
   // TODO: answer here
-  let detik = 0;
-  let menit = 0;
-  let jam = 0;
-  stopwatch.innerHTML("00:00:00")
+  detik = 0;
+  menit = 0;
+  jam = 0;
+  stopwatch.innerHTML = "00:00:00"
 }
 
 function runTime() {
