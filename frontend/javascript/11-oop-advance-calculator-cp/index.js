@@ -37,10 +37,10 @@ class Calculator {
     this.operand **= num;
     return this
   }
-  //squareRoot(num){
-    //this.operand **= (1/num)
-    //return this
-  //}
+  squareRoot(num){
+    this.operand **= (1/num)
+    return this
+  }
 }
 
 module.exports = Calculator
