@@ -12,6 +12,24 @@ class Person {
     this.job = job;
   }
   
+  get getName() {
+    return this.name;
+  }
+  get getAge() {
+    return this.age;
+  }
+  get getJob() {
+    return this.job
+  }
+  set setName(a){
+    this.name = a
+  }
+  set setAge(b){
+    this.age = b
+  }
+  set setJob(c){
+    this.job = c
+  }
   // TODO: answer here
 }
 
