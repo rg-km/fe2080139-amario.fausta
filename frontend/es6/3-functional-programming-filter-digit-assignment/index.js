@@ -11,6 +11,8 @@
 
 const filterDigit = (array, digit) => {
   // TODO: answer here
+  const hasil = arr.filter(val => val[digit])
+  return hasil
 };
 
 module.exports = filterDigit
