@@ -8,6 +8,9 @@
 
 const filterString = (array) => {
   // TODO: answer here
+  var hasil = array.filter( val => typeof(val) == "string");
+  console.log(hasil)
+  return hasil
 };
 
 module.exports = filterString
