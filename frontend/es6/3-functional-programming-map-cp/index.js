@@ -7,8 +7,12 @@
  * 
  */
 
-const lowerToUpperMap = (array) => {
+ const lowerToUpperMap = (array) => {
   // TODO: answer here
+  return array.map( data => {
+    return {[data]: data.toUpperCase()}
+  })
 };
 
+console.log(lowerToUpperMap(['a', 'b', 'c', 'd']))
 module.exports = lowerToUpperMap
