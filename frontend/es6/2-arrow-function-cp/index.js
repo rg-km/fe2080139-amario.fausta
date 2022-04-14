@@ -15,6 +15,16 @@
  */
 
 // TODO: answer here
+const multiplyByTwo = n =>{
+  return n*2
+}
+
+const multiply = (x,y) =>{
+  return x*y
+}
+const returnTheTwo = () => {
+  return 2
+}
 
 module.exports = {
   multiplyByTwo,
