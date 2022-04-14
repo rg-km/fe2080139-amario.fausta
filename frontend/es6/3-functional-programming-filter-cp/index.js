@@ -14,8 +14,14 @@
  *
  */
 
-const findAnimal = (bush) => {
-  // TODO: answer here
-};
+ const findAnimal = (bush) => {
+  bush = bush.split("")
+  var hasil = bush.filter( val => val.toLowerCase() === val);
+  hasil = hasil.join("")
+  console.log(hasil)
+  return hasil
+}
+
+
 
 module.exports = findAnimal
