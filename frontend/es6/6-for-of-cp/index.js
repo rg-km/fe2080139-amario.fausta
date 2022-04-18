@@ -8,8 +8,13 @@
  * - Pastikan menggunakan for-of untuk perulangan
  */
 
-const convertElementToType = (array) => {
+ const convertElementToType = (array) => {
   // TODO: answer here
+  const result = [];
+  for (const element of array) {
+    result.push(typeof element);
+  }
+  return result;
 };
 
-module.exports = convertElementToType
+module.exports = convertElementToType;
