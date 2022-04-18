@@ -8,7 +8,10 @@
  */
 
 const maxFromArray = (numbers) => {
-  // TODO: answer here
+  // TODO: answer hereconst max = numbers.reduce((acc, curr) => {
+    const max = numbers.reduce((acc, curr) => {
+      return acc > curr ? acc : curr;
+    });
   return max;
 };
 
