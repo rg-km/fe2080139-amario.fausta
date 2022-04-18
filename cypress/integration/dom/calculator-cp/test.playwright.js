@@ -69,7 +69,6 @@ describe("dot", () => {
     await page.locator("#num1").click();
     await page.locator("#dot").click();
     await page.locator("#num3").click();
-
     await page.locator("#calc").click();
     expect(await page.locator("input").inputValue()).toBe("1.3");
   });

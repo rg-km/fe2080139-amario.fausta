@@ -11,7 +11,7 @@
 
 const filterDigit = (array, digit) => {
   // TODO: answer here
-  const hasil = array.filter(val => val.length == digit)
+  const hasil = array.filter(val)
   return hasil
 };
 

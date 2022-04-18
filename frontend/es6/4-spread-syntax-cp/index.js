@@ -9,6 +9,7 @@
  */
 const max = (...args) => {
   // TODO: answer here
+  
 };
 
 module.exports = max
