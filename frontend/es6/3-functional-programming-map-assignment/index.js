@@ -22,8 +22,20 @@
  * Hint: gunakan Math.round() untuk membulatkan nilai rata-rata.
  */
 
-const returnUserAverageScore = (students) => {
+ const returnUserAverageScore = (students) => {
   // TODO: answer here
+  const result = students.map((student) => {
+    const average = Math.round(
+      student.nilai.reduce((acc, curr) => {
+        return acc + curr;
+      }) / student.nilai.length
+    );
+    return {
+      name: student.name,
+      rataNilai: average,
+    };
+  });
+  return result;
 };
 
 module.exports = returnUserAverageScore
