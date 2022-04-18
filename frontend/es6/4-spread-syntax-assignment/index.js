@@ -7,6 +7,10 @@
 
 const mergeTwoObjects = (firstObject, secondObject) => {
   // TODO: answer here
+  const obj1 = firstObject;
+  const obj2 = secondObject;
+
+  return {...obj1,...obj2}
 };
 
 module.exports = mergeTwoObjects
