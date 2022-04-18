@@ -11,7 +11,7 @@
 
 const filterDigit = (array, digit) => {
   // TODO: answer here
-  const hasil = array.filter(val)
+  const hasil = array.filter(val => val > 10 && val < 100)
   return hasil
 };
 
