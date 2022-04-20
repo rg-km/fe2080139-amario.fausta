@@ -29,33 +29,52 @@
  *   true: [ { name: 'Tegar', year: 1995, place: 'Depok' } ] }
  */
 
+
 const input = [
   {
-    name: 'Adit',
+    name: "Adit",
     year: 1996,
-    place: 'Bogor',
+    place: "Bogor",
   },
   {
-    name: 'Fauzan',
+    name: "Fauzan",
     year: 1995,
-    place: 'Depok',
+    place: "Depok",
   },
   {
-    name: 'Vika',
+    name: "Vika",
     year: 1990,
-    place: 'Bandung',
+    place: "Bandung",
   },
 ];
 
 const isOdd = (data) => {
   // TODO: answer here
+  let dataYear = data.year;
+  if (dataYear % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
-const groupBy = (array, callback) => array.reduce(
-  (accumulator, dataValue) => {
+const groupBy = (array, callback) =>
+  array.reduce((accumulator, dataValue) => {
     // TODO: answer here
-  }, {}
-);
+    let isOdd = callback(dataValue);
+    if (isOdd) {
+      if (!accumulator[isOdd]) {
+        accumulator[isOdd] = [];
+      }
+      accumulator[isOdd].push(dataValue);
+    } else {
+      if (!accumulator[isOdd]) {
+        accumulator[isOdd] = [];
+      }
+      accumulator[isOdd].push(dataValue);
+    }
+    return accumulator;
+  }, {});
 
 console.log(groupBy(input, isOdd))
 
