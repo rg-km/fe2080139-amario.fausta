@@ -1,6 +1,13 @@
 function ageDistribution(persons) {
     let result = new Map();
     // TODO: answer here
+    for (let person of persons) {
+        if (result.has(person.age)) {
+            result.set(person.age, result.get(person.age) + 1);
+        }else {
+            result.set(person.age, 1)
+        }
+    }
     return result
 }
 
