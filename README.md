@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# fe2080139-amario.fausta
-=======
 # Ruangguru Playground
 
 [![GitHub Super-Linter](https://github.com/ruang-guru/playground/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
@@ -17,4 +14,19 @@
 - `git add .`
 - `git commit -nm "(sync)"`
 - `git push`
->>>>>>> dc02b514226922989fd9ef8c6559f1daa6eecdc5
+
+=======
+
+## Adding or Modifying Assignment
+- Create or modify your assignment on your folder
+- Update file [assignments.json](./assignments.json)
+  - Assignment format should be:
+    ```json
+    {
+        "course": "<your course>",
+        "path": "path/to/your/assignment/directory",
+        "weight": 50.0
+    }
+    ```
+- Create pull request
+>>>>>>> 841cc8058b2af3b230b3f3261ca1d9451b8e55f0
