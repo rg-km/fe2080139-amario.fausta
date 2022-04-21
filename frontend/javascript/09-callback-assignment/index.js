@@ -68,7 +68,7 @@ const groupBy = (array, callback) =>
       }
       accumulator[isOdd].push(dataValue);
     } else {
-      if (!accumulator[isOdd]) {
+      if (!accumulator[isOdd]) {  
         accumulator[isOdd] = [];
       }
       accumulator[isOdd].push(dataValue);
