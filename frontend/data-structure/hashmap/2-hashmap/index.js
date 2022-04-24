@@ -28,11 +28,5 @@ function numJewelsInStones(jewel, stones) {
     return count
 }
 
-let jewels = "aA";
-let stones = "aAAbbbb";
 
-console.log(numJewelsInStones(jewels, stones));
 
-jewels = "z";
-stones = "ZZ";
-console.log(numJewelsInStones(jewels, stones));
