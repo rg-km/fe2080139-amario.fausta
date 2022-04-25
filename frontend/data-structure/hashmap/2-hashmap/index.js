@@ -30,7 +30,6 @@ function numJewelsInStones(jewel, stones) {
 
 let jewels = "aA";
 let stones = "aAAbbbb";
-
 console.log(numJewelsInStones(jewels, stones));
 
 jewels = "z";
