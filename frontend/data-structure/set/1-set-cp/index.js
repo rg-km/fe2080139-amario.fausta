@@ -15,7 +15,6 @@
 function intersection(setA, setB) {
     let result = new Set();
     
-    let yoho = []
     for(let i  of setA){
         if(setB.has(i)){
             result.add(i)
