@@ -16,14 +16,11 @@ function intersection(setA, setB) {
     let result = new Set();
     
     let yoho = []
-    for(let i = 0; i < setA.length; i ++){
-        for(let j = 0; j < setB.length; j ++){
-            if(setA[i] == setB[j]){
-                result.push(setA[i])
-            }
+    for(let i  of setA){
+        if(setB.has(i)){
+            result.add(i)
         }
     }
-
     return result; // TODO: replace this
 }
 
