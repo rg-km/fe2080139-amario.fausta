@@ -21,8 +21,9 @@ module.exports = class Stack {
         if (this.top == -1) {
           throw "stack underflow";
         }
-        let poppedValue = this.data.pop();
+        else{
         this.top -= 1;
-        return poppedValue;
+        return this.data.pop();
+        }
       }
 }

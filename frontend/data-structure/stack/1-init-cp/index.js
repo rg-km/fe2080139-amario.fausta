@@ -8,5 +8,4 @@ module.exports = class Stack {
         this.top = -1;
         this.size = 10;
     }
-x
 }
