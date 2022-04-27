@@ -4,5 +4,9 @@
 module.exports = class Stack {
     constructor() {
         // TODO: answer here
+        this.data = [];
+        this.top = -1;
+        this.size = 10;
     }
+x
 }
