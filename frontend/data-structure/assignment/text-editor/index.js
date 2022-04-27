@@ -2,34 +2,59 @@ module.exports = class TextEditor {
     constructor() {
         // TODO: answer here
         this.data = []
+        this.undoStack = []
+        this.redoStack = []
+        this.size = 10
         this.top = -1
-        this.memory = []
     }
 
     write(c) {
         // TODO: answer here
-        this.top += 1
-        return this.data.push(c)
+        this.data.push(c)
+        this.top++
+         if (this.undoStack.length === this.size) {
+            this.undoStack.shift()
+        }
+        this.undoStack.push(c)
+
     }
 
     read() {
         // TODO: answer here
-        let ayo = this.data.join("")
-        return ayo
+        let output = ""
+        for (let i = 0; i < this.data.length; i++) {
+            output += this.data[i]
+        }
+        if (output === "") {
+            output = ""
+        }
+        else {
+            output = output
+        }
+        return output
     }
 
     undo() {
-        this.memory.push(this.data[this.top])
-        this.top -= 1
         // TODO: answer here
-        return this.data.pop()
+        if (this.undoStack.length === 0) {
+            return
+        }
+        let lastElement = this.undoStack.pop()
+        this.redoStack.push(lastElement)
+        this.data.pop()
+        this.top--
+
+
     }
     
     redo() {
         // TODO: answer here
-        this.top += 1
-        let bisa = this.memory[this.memory.length - 1]
-        this.memory.pop()
-        return this.data.push(bisa)
+        if (this.redoStack.length === 0) {
+            return
+        }
+        let lastElement = this.redoStack.pop()
+        this.undoStack.push(lastElement)
+        this.data.push(lastElement)
+        this.top++     
     }
 }
