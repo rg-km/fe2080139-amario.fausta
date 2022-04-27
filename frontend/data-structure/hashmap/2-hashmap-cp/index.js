@@ -17,40 +17,33 @@
 // Explanation: Jika ditata, "apple" dan "paddle" memiliki huruf-huruf yang berbeda
 
 function anagramChecker(str1, str2) {
-  // TODO: replace this
-  let str1Map = new Map();
-  let str2Map = new Map();
-str1 = str1.split("")
-str2 = str2.split("")
-let n = 1
-for(let k of str1){
-    if(str1Map.has(k)){
-        str1Map.set(k, n + 1)
+    //return true; // TODO: replace this
+    if (str1.length !== str2.length) {
+      return false;
     }
-    else{
-        str1Map.set(k, n)
+    let hash = {};
+    for (let i = 0; i < str1.length; i++) {
+      if (hash[str1[i]]) {
+        hash[str1[i]] += 1;
+      } else {
+        hash[str1[i]] = 1;
+      }
     }
+    for (let i = 0; i < str2.length; i++) {
+      if (hash[str2[i]]) {
+        hash[str2[i]] -= 1;
+      } else {
+        hash[str2[i]] = 1;
+      }
+    }
+    for (let key in hash) {
+      if (hash[key] !== 0) {
+        return false;
+      }
+    }
+    return true;
 }
-for(let k of str2){
-      if(str2Map.has(k)){
-          str2Map.set(k, n + 1)
-      }
-      else{
-          str2Map.set(k, n)
-      }
-  }
-  for(let k of str1Map){
-      var hasilSementara = [];
-      if(str1Map.get(k[0]) == str2Map.get(k[0])){
-          hasilSementara.push(true)
-      }
-      else{
-          hasilSementara.push(false)
-      }
-
-  }
-  return hasilSementara[0]
-}
+  
 console.log(anagramChecker("keen", "knee"));
 console.log(anagramChecker("kee", "knn"));
 console.log(anagramChecker("fried", "fired"));
