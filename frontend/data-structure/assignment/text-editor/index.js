@@ -4,7 +4,6 @@ module.exports = class TextEditor {
         this.data = []
         this.undoStack = []
         this.redoStack = []
-        this.size = 10
         this.top = -1
     }
 
@@ -12,9 +11,6 @@ module.exports = class TextEditor {
         // TODO: answer here
         this.data.push(c)
         this.top++
-         if (this.undoStack.length === this.size) {
-            this.undoStack.shift()
-        }
         this.undoStack.push(c)
 
     }
