@@ -20,6 +20,7 @@ function myPow(x, n) {
     let pow = Math.abs(n);
     
     // TODO: answer here
+    this.x = x;
     
     // TODO: answer here
 }
