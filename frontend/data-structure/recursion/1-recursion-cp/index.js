@@ -20,7 +20,9 @@ function myPow(x, n) {
     let pow = Math.abs(n);
     
     // TODO: answer here
-    this.x = x;
+    if(n > 0){
+        return
+    }
     
     // TODO: answer here
 }
