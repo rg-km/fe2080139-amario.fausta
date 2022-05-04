@@ -1,6 +1,6 @@
 module.exports = class Song {
-    constructor(singer, title) {
+    constructor(singer, judul) {
         this.singer = singer
-        this.title = title
+        this.title = judul
     }
 }
