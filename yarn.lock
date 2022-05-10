@@ -2069,6 +2069,7 @@
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "fsevents@^2.3.2":
   "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
@@ -2076,6 +2077,8 @@
   "version" "2.3.2"
 
 >>>>>>> 0a32055256f6fde63d12cce9d6bf4e9ec0eccbd2
+=======
+>>>>>>> de9d15ad9de3496f1e623050903f723de922d236
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
