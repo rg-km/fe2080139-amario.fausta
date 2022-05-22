@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 const Container = ({children}) =>{
     const theme = useContext(ThemeContext).theme;
-
+    console.log(theme)
     const renderTheme = (theme) =>{
         //mengubah background dari container
         // TODO: answer here
