@@ -9,7 +9,12 @@ const ToggleButton = () =>{
 
     const changeTheme = (theme) =>{
         //mengubah tema dari toggleButton
-        // TODO: answer here
+        // TODO: answer here{
+        if(theme == "light"){
+            setTheme("dark")
+        }else{
+            setTheme("light")
+        }
     }
 
     const renderToggleButtonText = (theme) =>{
@@ -24,6 +29,7 @@ const ToggleButton = () =>{
                 <span className={`${styles['slider']} ${styles['round']}`}></span>
             </label>
             <p data-testid="toggle-button-text">{renderToggleButtonText(theme)}</p>
+
         </div>
     )
 }

@@ -19,10 +19,7 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "prompt-sync": "^4.2.0"
-=======
-    "axios": "^0.27.1"
->>>>>>> de9d15ad9de3496f1e623050903f723de922d236
+    "axios": "^0.27.1",
+    "react-router-dom": "^6.3.0"
   }
 }

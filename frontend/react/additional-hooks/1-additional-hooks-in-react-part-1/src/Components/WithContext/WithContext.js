@@ -14,7 +14,7 @@ const WithContext = () =>{
             }}>
                <Toolbar />
                <WeatherReaction/>
-            </ThemeContext.Provider>
+        </ThemeContext.Provider>
     )
 }
 
