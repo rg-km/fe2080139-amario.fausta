@@ -1,7 +1,7 @@
 // TODO: answer here
 import "../App.css"
 import "../index.css"
-import React, {useState} from 'react';
+import React from 'react';
 
 export default function UploadForm({onSubmit}) {
   // TODO: answer here

@@ -1,4 +1,4 @@
-# React Project "Instagram Clone"
+ # React Project "Instagram Clone"
 
 ## Setup
 Jalankan `npm install` untuk meng-install dependency yang dibutuhkan
