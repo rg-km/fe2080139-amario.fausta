@@ -9,7 +9,6 @@ export default function ProfileEdit() {
   const [bioValue, setBioValue] = useState(bio)
 
   const handleSubmit = (e) => {
-    e.preventDefault()
     setName(nameValue)
     setAddress(addressValue)
     setBio(bioValue)
