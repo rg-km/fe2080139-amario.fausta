@@ -8,7 +8,7 @@ function App() {
 
 function RandomEmoji() {
   // TODO: answer here
-  const [emoji, setEmoji] = React.useState("");
+  const [emoji, setEmoji] = React.useState("🤔");
   return (
     <div className="wrapper">
       <h1 className="emoji" data-testid="emoji">

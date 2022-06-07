@@ -23,7 +23,7 @@ let spanishText = {
 }
 
 let indonesianText = {
-    headline: 'Dapatkan wawasan yang membantu bisnismu berkembang',
+    headline: 'Dapatkan wawasan yang membantu bisnismu berkembang gilaaaa',
     description: 'Temukan manfaat analitik data dan buat keputusan yang lebih baik terkait pendapatan, pengalaman pelanggan, dan efisiensi secara keseluruhan',
     companies: 'PERUSAHAAN',
     templates: 'TEMPLATE',
