@@ -18,6 +18,8 @@ const App = () => {
           <Route path=":id" element={<PeopleDetail />} />
         </Route>
         {/* TODO: answer here */}
+        <Route path="404" element={<NotFound />} />
+
         <Route path="*" element={<NotFound />} />
       </Route>
       <Route path="*" element={<NotFound />} />

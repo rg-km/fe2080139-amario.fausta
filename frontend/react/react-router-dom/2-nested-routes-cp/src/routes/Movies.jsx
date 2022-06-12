@@ -16,6 +16,7 @@ const Movies = () => {
         signal: controller.signal,
       });
       // TODO: answer here
+      setMovies(data.results);
     } catch (error) {
       console.log(error);
     }
@@ -52,6 +53,12 @@ const Movies = () => {
           {movies.length &&
             movies.map((movie, index) => (
               // TODO: answer here
+              <Link key={index} to={`/movies/${getID(movie.url)}`}>
+                <div className="card">
+                  <h2>{movie.title}</h2>
+                  <p>{movie.release_date}</p>
+                </div>
+              </Link>
             ))}
         </div>
       ) : (

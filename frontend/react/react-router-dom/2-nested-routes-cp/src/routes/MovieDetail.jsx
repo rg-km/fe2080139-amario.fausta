@@ -7,16 +7,21 @@ const MovieDetail = () => {
   const [detail, setDetail] = useState(null);
   const [loading, setLoading] = useState(false);
   // TODO: answer here
+  const { id } = useParams();
+
   const controller = new AbortController();
 
   const loadDetail = async () => {
     setLoading(true);
     try {
-      const url = /* beginanswer */ "https://swapi.dev/api/films/" + id; /* endanswer "" */
+      const url =
+        /* beginanswer */ "https://swapi.dev/api/films/" +
+        id; /* endanswer "" */
       const { data } = await axios.get(url, {
         signal: controller.signal,
       });
       // TODO: answer here
+      setDetail(data);
     } catch (error) {
       console.log(error);
     }
@@ -25,6 +30,7 @@ const MovieDetail = () => {
 
   useEffect(() => {
     // TODO: answer here
+    loadDetail();
     return () => {
       controller.abort();
     };
